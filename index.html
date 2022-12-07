@@ -52,7 +52,15 @@
         });
 
         const cb = document.querySelector('#klizac');
-        console.log(cb.checked);
+        klizac.forEach(stanje =>{
+            stanje.addEventListener('click', ()=>{
+                if(cb.checked == false){
+                    document.querySelector(':root').style.setProperty('--main-color' , "#ffffff");
+                }else{
+                    document.querySelector(':root').style.setProperty('--main-color' , "#808080");
+                }
+            });
+        });
 
 
     </script>
