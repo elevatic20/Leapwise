@@ -40,12 +40,19 @@
     <script>
         
         let klizac = document.getElementsByClassName('slider round');
-
+        let siva = true;
+        let bojasiva = "#808080";
+        let bojabijela = "#ffffff";
         klizac.addEventListener('click', ()=>{
-            let siva = true;
+            
             if(siva){
-               document.querySelector(':root').style.setProperty('--main-color', white); 
+               document.querySelector(':root').style.setProperty('--main-color', bojabijela); 
+               siva = false;
+            }else{
+                document.querySelector(':root').style.setProperty('--main-color', bojasiva);
+                siva = true;
             }
+            
         });
 
         document.querySelector('.switcher-btn').onclick = () =>{
