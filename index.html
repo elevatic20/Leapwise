@@ -52,15 +52,14 @@
         });
 
         const cb = document.querySelector('#klizac');
-        cb.forEach(stanje =>{
-            stanje.addEventListener('click', ()=>{
+        cb.addEventListener('click', ()=>{
                 if(cb.checked == false){
                     document.querySelector(':root').style.setProperty('--main-color' , "#ffffff");
                 }else{
                     document.querySelector(':root').style.setProperty('--main-color' , "#808080");
                 }
             });
-        });
+    
 
 
     </script>
