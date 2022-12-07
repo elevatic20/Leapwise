@@ -53,12 +53,10 @@
 
         const cb = document.querySelector('#klizac');
         cb.addEventListener('click', ()=>{
-                if(cb.checked === false){
+                if(cb.value == false){
                     document.querySelector(':root').style.setProperty('--main-color' , "#ffffff");
-                    cb.checked = true;
                 }else{
                     document.querySelector(':root').style.setProperty('--main-color' , "#808080");
-                    cb.checked = false;
                 }
             });
     
