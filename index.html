@@ -57,9 +57,10 @@
                         document.querySelector(':root').style.setProperty('--main-color' , dataColor);
                     });
                 });
-                
+
                 }else{
                     document.querySelector(':root').style.setProperty('--main-color' , "#808080");
+                    document.querySelector('.color-switcher').classList.toggle('active');
                 }
             });
     
