@@ -52,7 +52,7 @@
         });
 
         const cb = document.querySelector('#klizac');
-        klizac.forEach(stanje =>{
+        cb.forEach(stanje =>{
             stanje.addEventListener('click', ()=>{
                 if(cb.checked == false){
                     document.querySelector(':root').style.setProperty('--main-color' , "#ffffff");
