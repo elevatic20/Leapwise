@@ -38,6 +38,16 @@
     </div>
 
     <script>
+        
+        let klizac = document.getElementsByClassName('slider round');
+
+        klizac.addEventListener('click', ()=>{
+            let siva = true;
+            if(siva){
+               document.querySelector(':root').style.setProperty('--main-color', white); 
+            }
+        })
+
         document.querySelector('.switcher-btn').onclick = () =>{
             document.querySelector('.color-switcher').classList.toggle('active');
         };
