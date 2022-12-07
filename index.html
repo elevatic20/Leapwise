@@ -28,8 +28,8 @@
     <div class="container">
         <h1>Lampica
             <br>
-            <label class="switch">
-                <input type="checkbox" style="text-align:center;">
+            <label class="switch" for="klizac">
+                <input type="checkbox" style="text-align:center;" name="klizac">
                 <span class="slider round"></span>
               </label>
         </h1>
@@ -38,8 +38,6 @@
     </div>
 
     <script>
-        
-
         document.querySelector('.switcher-btn').onclick = () =>{
             document.querySelector('.color-switcher').classList.toggle('active');
         };
@@ -52,6 +50,11 @@
                 document.querySelector(':root').style.setProperty('--main-color' , dataColor);
             });
         });
+
+        const cb = document.querySelector('#klizac');
+        console.log(cb.checked);
+
+
     </script>
 </body>
 </html>
