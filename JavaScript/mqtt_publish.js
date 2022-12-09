@@ -1,7 +1,8 @@
 var mqtt;
 var reconnectTimeout = 2000;
 var host = "test.mosquitto.org";
-var port = 8091;
+var port = 8080;
+
             function onConnect() {
                 console.log("Connected");
                 message = new Paho.MQTT.Message("webAppConnected");
