@@ -30,7 +30,9 @@ jobs:
         cache: 'npm'
 
     - name: npm build
-      run: npx http-server
+      run: |
+        npm install
+        npx http-server
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
       with:
